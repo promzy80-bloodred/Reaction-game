@@ -9,7 +9,7 @@ Your reaction time will be displayed in milliseconds.
 HTML,CSS,JavaScript .
   Installation
 Clone the repository:
-git clone https://github.com/yourusername/reaction-game.git
+git clone https://github.com/promzy80-bloodred/reaction-game.git
 Open index.html in your browser.
    Live Demo
 Add your GitHub Pages link here once deployed.
