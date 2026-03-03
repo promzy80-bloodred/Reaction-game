@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
+
+<html> <!-- Root element of the webpage -->
+
+<head> <!-- Contains meta information about the page -->
+
+    <title>Reaction Game</title> <!-- Title shown in browser tab -->
+
+    <!-- Link this HTML file to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> <!-- All visible content goes inside the body -->
+
+    <!-- Main heading of the game -->
+    <h1>Reaction Game</h1>
+
+    <!-- Score display text -->
+    <p>Score: <span id="score">0</span></p>
+    <!-- The span has an id so JavaScript can update the score -->
+
+    <!-- High score display -->
+    <p>High Score: <span id="highScore">0</span></p>
+
+    <label for="difficulty">Select Difficulty:</label>
+<select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium" selected>Medium</option>
+    <option value="hard">Hard</option>
+</select>
+
+    <!-- Start button to begin the game -->
+    <button id="startButton">Start Game</button>
+
+    <!-- Game area container -->
+    <div id="gameArea">
+
+        <!-- The clickable box -->
+        <div id="box"></div>
+
+    </div>
+
+    <!-- Link this HTML file to the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
