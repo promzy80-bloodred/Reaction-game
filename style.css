@@ -1,0 +1,151 @@
+/* ===========================
+   GENERAL PAGE STYLING
+   =========================== */
+
+body {
+    font-family: Arial, sans-serif; /* Clean readable font */
+    text-align: center; /* Center all text */
+    background-color: #f4f4f4; /* Light background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+/* ===========================
+   HEADINGS & TEXT
+   =========================== */
+
+h1 {
+    margin-top: 20px; /* Space above title */
+}
+
+p {
+    font-size: 18px; /* Slightly larger text */
+    margin: 5px 0; /* Small spacing between lines */
+}
+
+
+/* ===========================
+   DIFFICULTY DROPDOWN
+   =========================== */
+
+select {
+    padding: 5px; /* Inner spacing */
+    font-size: 16px; /* Readable text */
+    margin: 10px; /* Space around dropdown */
+}
+
+
+/* ===========================
+   START BUTTON
+   =========================== */
+
+button {
+    padding: 10px 20px; /* Size of button */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+
+/* ===========================
+   GAME AREA CONTAINER
+   =========================== */
+
+#gameArea {
+    width: 90%; /* 90% of screen width */
+    max-width: 600px; /* Maximum width on desktop */
+    height: 60vh; /* 60% of viewport height */
+    margin: 20px auto; /* Center horizontally */
+    background-color: lightgray; /* Light background */
+    position: relative; /* Needed for box positioning */
+    overflow: hidden; /* Prevent box from going outside */
+    border-radius: 10px; /* Rounded edges */
+}
+
+
+/* ===========================
+   CLICKABLE BOX
+   =========================== */
+
+#box {
+    width: 60px; /* Default width */
+    height: 60px; /* Default height */
+    background-color: red; /* Default color */
+    position: absolute; /* Needed for random movement */
+    cursor: crosshair; /* Pointer on hover */
+    border-radius: 8px; /* Slight rounding */
+    transition: transform 0.1s ease; /* Smooth animation */
+    touch-action: manipulation; /* Improves mobile tap response */
+}
+
+/* Small visual press effect */
+#box:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+}
+
+/* ===========================
+   MOBILE RESPONSIVENESS
+   =========================== */
+
+/* For very small screens (phones) */
+@media (max-width: 480px) {
+
+    #gameArea {
+        height: 50vh; /* Slightly smaller height */
+    }
+
+    #box {
+        width: 80px; /* Bigger box for easier tapping */
+        height: 80px;
+    }
+
+    p {
+        font-size: 16px; /* Slightly smaller text for phones */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button size */
+        padding: 8px 15px;
+    }
+}
+/* ===========================
+   COMBO GLOW EFFECT
+   =========================== */
+
+/* Glowing effect class */
+.combo-glow {
+    box-shadow: 0 0 20px 5px gold; /* Golden glow */
+    transform: scale(1.1); /* Slightly enlarge box */
+    transition: 0.2s ease; /* Smooth effect */
+}
+
+/* ===========================
+   COMBO LEVEL GLOW EFFECTS
+   =========================== */
+
+/* Combo 10+ */
+.combo-super {
+    box-shadow: 0 0 25px 6px orange;
+    transform: scale(1.15);
+}
+
+/* Combo 15+ */
+.combo-ultra {
+    box-shadow: 0 0 30px 8px red;
+    transform: scale(1.2);
+}
+
+/* Combo 20+ */
+.combo-insane {
+    box-shadow: 0 0 35px 10px purple;
+    transform: scale(1.25);
+}
